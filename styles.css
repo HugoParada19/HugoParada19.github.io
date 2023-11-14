@@ -4,12 +4,29 @@ body
 	color: white;
 }
 
-div
+.desktop
 {
 	background-color: gray;
 	border-radius: 25px;
 	margin: auto;
 	width: 25%;
-	border: 3px solid green;
+	border: 3px solid darkred;
 	padding: 10px;
+}
+
+.mobile
+{
+	background-color: darkred;
+	border-radius: 25px;
+	margin: auto;
+	width: 75%;
+	border: 3px solid red;
+	padding: 10px;
+	display: none;
+}
+
+@media (max-width: 1000px)
+{
+	.desktop{display: none;}
+	.mobile{display: block;}
 }
